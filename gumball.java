@@ -26,14 +26,14 @@ public class gumball
             total = total + coin;
         }
         System.out.println("Your current total is " + total + " cents");
-        System.out.println("Press 0 to dispense red gumballs, 1 to dispense yellow gumballs, and 3 to return your change");
+        System.out.println("Press 0 to dispense red gumballs, 1 to dispense yellow gumballs, and 2 to return your change");
         while((value = scanner.nextInt()) <= 3)
         {
             if(value == 0)
             {
                 redCounter++;
                 total = total - NICKEL;
-                System.out.println("Current change is " + total);
+                System.out.println("Current change is " + total + " cents");
                 if (total == 0)
                 {
                     break;
@@ -43,13 +43,13 @@ public class gumball
             {
                 yellowCounter++;
                 total = total - DIME;
-                System.out.println("Current change is " + total);
+                System.out.println("Current change is " + total + " cents");
                 if (total == 0)
                 {
                     break;
                 }
             }
-            if (value == 3)
+            if (value == 2)
             {
                 
                 break;
