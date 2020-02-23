@@ -25,7 +25,7 @@ public class gumball
             total = total + coin;
         }
         System.out.println("Your current total is " + total + " cents");
-        System.out.println("Press 0 to dispense red gumballs, 1 to dispense yellow gumballs, and 2 to return your change");
+        System.out.println("Enter 0 to dispense red gumballs, 1 to dispense yellow gumballs, and 2 to return your change");
         while((value = scanner.nextInt()) <= 3)
         {
             if(value == 0)
